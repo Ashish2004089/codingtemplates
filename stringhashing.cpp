@@ -2,14 +2,14 @@
 using namespace std;
 #define int long long 
 const int MOD = 1e9+7;
-	const int BASE1 = 5689;
-	const int BASE2 = 	8861;
+const int BASE1 = 5689;
+const int BASE2 = 	8861;
 
 struct Hash
-{ vector<pair<int,int>>hashes,pow;
-	
+{ 
 
-	
+	vector<pair<int,int>>hashes,pow;
+
 
 	Hash(string s){
 		hashes.assign(s.size()+1,{1,1});
@@ -34,19 +34,7 @@ struct Hash
 		return {hash1,hash2};
 	}
 };
-
-
-signed main(){
-
-ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
- 
-    #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-    #endif
-
-
+void solve(){
 
 
     string s,t;
@@ -58,8 +46,20 @@ ios_base::sync_with_stdio(false);
     		ans++;
     	}
     }
-    cout<<ans<<endl;
+ cout<<ans<<endl;
+}
 
+signed main(){
+ #ifdef ONLINE_JUDGE
+ 
+ 
+  
+  freopen("error.txt", "w", stderr); 
+  #endif
 
+    solve();
+
+ 
+ 
 
 }
