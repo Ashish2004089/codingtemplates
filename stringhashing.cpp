@@ -7,7 +7,7 @@ const int BASE2 = 	8861;
 
 struct Hash
 { 
-
+         //if you get overflow change the int,int to long long just
 	vector<pair<int,int>>hashes,pow;
 
 
@@ -37,16 +37,6 @@ struct Hash
 void solve(){
 
 
-    string s,t;
-    cin>>s>>t;
-    Hash a(s),b(t);
-    int ans=0;
-    for(int i=0;i+t.size()-1<s.size();i++){
-    	if(a.get(i,i+t.size()-1)==b.get(0,t.size()-1)){
-    		ans++;
-    	}
-    }
- cout<<ans<<endl;
 }
 
 signed main(){
