@@ -8,6 +8,7 @@ const int BASE2 = 	8861;
 struct Hash
 { 
          //if you get overflow change the int,int to long long just
+//o(n)
 	vector<pair<int,int>>hashes,pow;
 
 
@@ -25,7 +26,7 @@ struct Hash
 
 
 	//converting the input 0 based indexing to 1 based
-	pair<int,int>get(int l,int r){
+	pair<int,int>get(int l,int r){ // o(1)
 		l++,r++;
 
 		int hash1 =(hashes[r].first-(hashes[l-1].first*pow[r-l+1].first)%MOD+MOD)%MOD;
