@@ -1,6 +1,6 @@
 
 
-https://leetcode.com/problems/counting-words-with-a-given-prefix/description/
+leetcode.com/problems/counting-words-with-a-given-prefix/description/
 
 
 
