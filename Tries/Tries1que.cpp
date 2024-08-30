@@ -1,5 +1,5 @@
 leetcode.com/problems/implement-trie-prefix-tree
-    
+    //tc = O(n) 
 
 
 class TrieNode{  //initialize your data structure here 
